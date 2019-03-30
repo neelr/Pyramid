@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func clear3(_ sender: Any) {
         canvas.clearCanvas()
     }
-    @IBAction func clear(_ sender: Any) {
+    @IBAction func cleartriangle(_ sender: Any) {
         canvas.clearCanvas()
     }
     override func viewDidLoad() {

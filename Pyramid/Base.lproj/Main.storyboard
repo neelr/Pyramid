@@ -31,9 +31,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="5dZ-ay-GR1"/>
-                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9tK-eC-nGg"/>
-                                    <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="aZi-d2-MBV"/>
+                                    <action selector="cleartriangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3IN-2R-cIq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nM5-cq-T5z">
@@ -44,9 +42,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="tEz-Sc-2lp"/>
-                                    <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="dOu-Tx-ZS6"/>
-                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7D-qG-Wck"/>
                                     <segue destination="RdG-BY-DdZ" kind="show" id="FCP-pd-dNK"/>
                                 </connections>
                             </button>
@@ -82,7 +77,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="20u-Um-feq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="135" y="133.09859154929578"/>
+            <point key="canvasLocation" x="263" y="-425"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wPW-mf-qUd">
@@ -109,12 +104,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="hnI-fU-5eR"/>
-                                    <action selector="Clear:" destination="q3b-ON-SA2" eventType="touchUpInside" id="woV-Pp-Pe3"/>
                                     <action selector="clear2:" destination="dhk-bZ-nTN" eventType="touchUpInside" id="cDb-Qm-eOE"/>
-                                    <action selector="clear:" destination="q3b-ON-SA2" eventType="touchUpInside" id="49W-xH-S6J"/>
-                                    <action selector="clear:" destination="dhk-bZ-nTN" eventType="touchUpInside" id="5Qb-lZ-DNq"/>
-                                    <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="Qrb-NV-J6c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9x-Nm-j50">
@@ -125,11 +115,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="33X-je-UZ7"/>
-                                    <action selector="Clear:" destination="q3b-ON-SA2" eventType="touchUpInside" id="bm6-Hx-rxR"/>
-                                    <action selector="clear:" destination="q3b-ON-SA2" eventType="touchUpInside" id="LY6-bh-tKV"/>
-                                    <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="lNh-iR-zb5"/>
-                                    <action selector="clear:" destination="dhk-bZ-nTN" eventType="touchUpInside" id="uMg-ef-zYW"/>
                                     <segue destination="RdG-BY-DdZ" kind="show" id="TTY-qy-1LS"/>
                                 </connections>
                             </button>
@@ -159,7 +144,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQb-sY-Axl" sceneMemberID="firstResponder"/>
-                <exit id="q3b-ON-SA2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="785.625" y="741.54929577464793"/>
         </scene>
@@ -258,12 +242,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Clear:" destination="R8o-7t-z2S" eventType="touchUpInside" id="8ac-rf-Odr"/>
-                                    <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="Lgn-6Y-jpQ"/>
                                     <action selector="clear3:" destination="Ufc-14-W9e" eventType="touchUpInside" id="dUT-y4-4cA"/>
-                                    <action selector="clear:" destination="R8o-7t-z2S" eventType="touchUpInside" id="Btp-D0-vz0"/>
-                                    <action selector="clear:" destination="Ufc-14-W9e" eventType="touchUpInside" id="TGv-at-tHs"/>
-                                    <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="uZs-oE-eh2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0j-ff-ztU">
@@ -274,11 +253,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="ggY-em-1WP"/>
-                                    <action selector="Clear:" destination="R8o-7t-z2S" eventType="touchUpInside" id="yFV-St-JXN"/>
-                                    <action selector="clear:" destination="Ufc-14-W9e" eventType="touchUpInside" id="3rS-Lx-3ru"/>
-                                    <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="CaS-OC-Mz2"/>
-                                    <action selector="clear:" destination="R8o-7t-z2S" eventType="touchUpInside" id="Hpp-Ob-fZQ"/>
                                     <segue destination="RdG-BY-DdZ" kind="show" id="t3p-Am-X7P"/>
                                 </connections>
                             </button>
@@ -307,7 +281,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vah-OE-KuA" sceneMemberID="firstResponder"/>
-                <exit id="R8o-7t-z2S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1226.25" y="-57.04225352112676"/>
         </scene>
@@ -319,6 +292,6 @@
         <image name="tic" width="320" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TTY-qy-1LS"/>
+        <segue reference="t3p-Am-X7P"/>
     </inferredMetricsTieBreakers>
 </document>
