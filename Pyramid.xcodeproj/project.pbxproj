@@ -14,6 +14,7 @@
 		B31A7379224F0BE90009A1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31A7377224F0BE90009A1FF /* LaunchScreen.storyboard */; };
 		B31A7384224F0BE90009A1FF /* PyramidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A7383224F0BE90009A1FF /* PyramidTests.swift */; };
 		B31A738F224F0BE90009A1FF /* PyramidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A738E224F0BE90009A1FF /* PyramidUITests.swift */; };
+		B31A73A1224F0D600009A1FF /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A73A0224F0D5F0009A1FF /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B31A738A224F0BE90009A1FF /* PyramidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyramidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31A738E224F0BE90009A1FF /* PyramidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyramidUITests.swift; sourceTree = "<group>"; };
 		B31A7390224F0BE90009A1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31A73A0224F0D5F0009A1FF /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		B31A736D224F0BE80009A1FF /* Pyramid */ = {
 			isa = PBXGroup;
 			children = (
+				B31A73A0224F0D5F0009A1FF /* CanvasView.swift */,
 				B31A736E224F0BE80009A1FF /* AppDelegate.swift */,
 				B31A7370224F0BE80009A1FF /* ViewController.swift */,
 				B31A7372224F0BE80009A1FF /* Main.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				B31A7371224F0BE80009A1FF /* ViewController.swift in Sources */,
 				B31A736F224F0BE80009A1FF /* AppDelegate.swift in Sources */,
+				B31A73A1224F0D600009A1FF /* CanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSM8BL84QX;
 				INFOPLIST_FILE = Pyramid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSM8BL84QX;
 				INFOPLIST_FILE = Pyramid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
