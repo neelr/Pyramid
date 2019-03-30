@@ -9,7 +9,7 @@
 import UIKit
 
 class CanvasView: UIView {
-    
+    var lay = false
     // Properties for line drawing
     var lineColor:UIColor!
     var lineWidth:CGFloat!
@@ -36,6 +36,7 @@ class CanvasView: UIView {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         // get the next touch point as the user draws
+        lay = true
         let touch = touches.first
         touchPoint = touch?.location(in: self)
         
@@ -74,9 +75,15 @@ class CanvasView: UIView {
         lineColor = UIColor.blue
     }
     func clearCanvas() {
-        path.removeAllPoints()
-        self.layer.sublayers = nil
-        self.setNeedsDisplay()
+        do {
+            if lay {
+                path.removeAllPoints()
+                self.layer.sublayers = nil
+                self.setNeedsDisplay()
+            }
+        } catch {
+            print("OOF")
+        }
     }
     
     

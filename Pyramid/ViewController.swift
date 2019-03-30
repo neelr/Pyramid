@@ -11,7 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var canvas: CanvasView!
     @IBAction func clear2(_ sender: Any) {
-        canvas.clearCanvas()
+        do {
+            canvas.clearCanvas()
+        } catch {
+            print("OOF")
+        }
     }
     
     @IBAction func red3(_ sender: Any) {
@@ -33,10 +37,18 @@ class ViewController: UIViewController {
         canvas.switchtored()
     }
     @IBAction func clear3(_ sender: Any) {
-        canvas.clearCanvas()
+        do {
+            canvas.clearCanvas()
+        } catch {
+            print("OOF")
+        }
     }
     @IBAction func cleartriangle(_ sender: Any) {
-        canvas.clearCanvas()
+        do {
+            canvas.clearCanvas()
+        } catch {
+            print("OOF")
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
