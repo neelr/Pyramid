@@ -14,6 +14,24 @@ class ViewController: UIViewController {
         canvas.clearCanvas()
     }
     
+    @IBAction func red3(_ sender: Any) {
+        canvas.switchtored()
+    }
+    @IBAction func blue3(_ sender: Any) {
+        canvas.switchtoblue()
+    }
+    @IBAction func red2(_ sender: Any) {
+        canvas.switchtored()
+    }
+    @IBAction func blue2(_ sender: Any) {
+        canvas.switchtoblue()
+    }
+    @IBAction func blue1(_ sender: Any) {
+        canvas.switchtoblue()
+    }
+    @IBAction func red1(_ sender: Any) {
+        canvas.switchtored()
+    }
     @IBAction func clear3(_ sender: Any) {
         canvas.clearCanvas()
     }

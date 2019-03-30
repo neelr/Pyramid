@@ -54,6 +54,22 @@
                                 <rect key="frame" x="-25" y="70" width="389" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-AF-NtS">
+                                <rect key="frame" x="24" y="482" width="58" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.14807494056190951" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="blue1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rrz-Wa-jPh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfD-tu-lCJ">
+                                <rect key="frame" x="237" y="482" width="58" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89181913859999995" green="0.075263840329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="red1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJI-65-Rkm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,6 +131,22 @@
                                     <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="lNh-iR-zb5"/>
                                     <action selector="clear:" destination="dhk-bZ-nTN" eventType="touchUpInside" id="uMg-ef-zYW"/>
                                     <segue destination="RdG-BY-DdZ" kind="show" id="TTY-qy-1LS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEh-NJ-XKp">
+                                <rect key="frame" x="26" y="482" width="58" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.14807494060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="blue3:" destination="dhk-bZ-nTN" eventType="touchUpInside" id="LCf-Bk-r1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KT-kS-wd6">
+                                <rect key="frame" x="234" y="482" width="58" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89181913859999995" green="0.075263840329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="red3:" destination="dhk-bZ-nTN" eventType="touchUpInside" id="azC-j0-pZF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -250,6 +282,22 @@
                                     <segue destination="RdG-BY-DdZ" kind="show" id="t3p-Am-X7P"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbB-WC-e9S">
+                                <rect key="frame" x="233" y="480" width="58" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89181913859999995" green="0.075263840329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="red2:" destination="Ufc-14-W9e" eventType="touchUpInside" id="6Dg-TI-GJd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4S-93-EqU">
+                                <rect key="frame" x="27" y="480" width="58" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.14807494060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="blue2:" destination="Ufc-14-W9e" eventType="touchUpInside" id="71b-hg-sU3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LoB-rg-3ny"/>
@@ -271,6 +319,6 @@
         <image name="tic" width="320" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FCP-pd-dNK"/>
+        <segue reference="TTY-qy-1LS"/>
     </inferredMetricsTieBreakers>
 </document>

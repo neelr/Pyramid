@@ -16,13 +16,14 @@ class CanvasView: UIView {
     var path:UIBezierPath!
     var touchPoint:CGPoint!
     var startingPoint:CGPoint!
-    
     override func layoutSubviews() {
         self.clipsToBounds = true // no lines should be visible outside of the view
         self.isMultipleTouchEnabled = false // we only process one touch at a time
         
         // standard settings for our line
-        lineColor = UIColor.black
+        if (lineColor != UIColor.blue) && (lineColor != UIColor.red) {
+            lineColor = UIColor.blue
+        }
         lineWidth = 5
     }
     
@@ -66,7 +67,12 @@ class CanvasView: UIView {
         self.setNeedsDisplay()
         
     }
-    
+    func switchtored() {
+        lineColor = UIColor.red
+    }
+    func switchtoblue() {
+        lineColor = UIColor.blue
+    }
     func clearCanvas() {
         path.removeAllPoints()
         self.layer.sublayers = nil
