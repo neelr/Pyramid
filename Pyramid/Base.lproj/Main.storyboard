@@ -11,6 +11,60 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="9wn-uy-dDL">
+            <objects>
+                <viewController id="Kkd-68-sc0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="25H-1p-mUB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6d-Z9-TZL">
+                                <rect key="frame" x="16" y="20" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taU-Kv-WJg">
+                                <rect key="frame" x="25" y="65" width="271" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ih-9t-jzS">
+                                <rect key="frame" x="25" y="140" width="280" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">What is this? In simple, it is an IOS app to play pencil games on the go! SO far you can play Pyramid, Dots and Boxes, and Tic-Tac-Toe. For any bugs or requests, email tectonroot@gmail.com. If you have any questions on how to play, click on the links at https://hacker719/github.io/Pyramid and for the source code, visit https://github.com/Hacker719/Pyramid</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ian-TO-3wq">
+                                <rect key="frame" x="94" y="412" width="132" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="eu1-8S-YD5"/>
+                                    <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="Baz-Vo-3po"/>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EF5-qi-wdL"/>
+                                    <segue destination="RdG-BY-DdZ" kind="show" animates="NO" id="GIe-6D-FJD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8D8-1X-JvL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Unc-TR-12W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033.125" y="-127.8169014084507"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pyramid" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,11 +72,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-SX-FQT" customClass="CanvasView" customModule="Pyramid">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuw-xE-YzW">
                                 <rect key="frame" x="108" y="468" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,13 +97,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="RdG-BY-DdZ" kind="show" id="FCP-pd-dNK"/>
+                                    <segue destination="RdG-BY-DdZ" kind="show" animates="NO" id="FCP-pd-dNK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="feo-PL-Oia">
-                                <rect key="frame" x="-25" y="70" width="389" height="370"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-AF-NtS">
                                 <rect key="frame" x="24" y="482" width="58" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,6 +122,15 @@
                                     <action selector="red1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJI-65-Rkm"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="feo-PL-Oia">
+                                <rect key="frame" x="-27" y="25" width="389" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-SX-FQT" customClass="CanvasView" customModule="Pyramid">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -133,7 +187,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="RdG-BY-DdZ" kind="show" id="TTY-qy-1LS"/>
+                                    <segue destination="RdG-BY-DdZ" kind="show" animates="NO" id="TTY-qy-1LS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEh-NJ-XKp">
@@ -204,7 +258,7 @@
                                     <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="OVg-cg-nk1"/>
                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Te0-Xx-6bu"/>
                                     <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="i7p-OZ-NpE"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="v6p-Uy-OMj"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="v6p-Uy-OMj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7I-2E-hmW">
@@ -221,7 +275,7 @@
                                     <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="HBC-Rf-u80"/>
                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fK-8b-tCW"/>
                                     <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="ZK7-mj-EEB"/>
-                                    <segue destination="Ufc-14-W9e" kind="show" id="sSc-tc-gie"/>
+                                    <segue destination="Ufc-14-W9e" kind="show" animates="NO" id="sSc-tc-gie"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0R-f7-Vhi">
@@ -238,7 +292,7 @@
                                     <action selector="Clear:" destination="20u-Um-feq" eventType="touchUpInside" id="lcW-Xj-Rge"/>
                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPQ-gv-xZ7"/>
                                     <action selector="clear:" destination="20u-Um-feq" eventType="touchUpInside" id="s61-n6-faC"/>
-                                    <segue destination="dhk-bZ-nTN" kind="show" id="pJg-Gj-fjp"/>
+                                    <segue destination="dhk-bZ-nTN" kind="show" animates="NO" id="pJg-Gj-fjp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="© Neel Redkar 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PD-0F-Qyc">
@@ -248,6 +302,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAy-6N-9Ne">
+                                <rect key="frame" x="16" y="20" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Kkd-68-sc0" kind="show" animates="NO" id="IZw-4q-Iu7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yCB-kB-Fg2"/>
@@ -255,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QEX-Jh-CQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-523.125" y="708.80281690140851"/>
+            <point key="canvasLocation" x="-1001" y="1168"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gIG-js-Tsd">
@@ -266,14 +327,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dot_matrix" translatesAutoresizingMaskIntoConstraints="NO" id="75I-eq-ms8">
-                                <rect key="frame" x="0.0" y="41" width="320" height="404"/>
+                                <rect key="frame" x="0.0" y="40" width="320" height="404"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bam-N3-cCV" customClass="CanvasView" customModule="Pyramid">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZD-DX-Lv5">
                                 <rect key="frame" x="108" y="467" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -299,7 +355,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="RdG-BY-DdZ" kind="show" id="t3p-Am-X7P"/>
+                                    <segue destination="RdG-BY-DdZ" kind="show" animates="NO" id="t3p-Am-X7P"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbB-WC-e9S">
@@ -324,6 +380,11 @@
                                     <action selector="blue2:" destination="Ufc-14-W9e" eventType="touchUpInside" id="71b-hg-sU3"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bam-N3-cCV" customClass="CanvasView" customModule="Pyramid">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LoB-rg-3ny"/>
