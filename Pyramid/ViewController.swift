@@ -18,6 +18,11 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func Redirect(_ sender: Any) {
+        if let url = URL(string: "https://hacker719.github.io/Pyramid") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
     @IBAction func red3(_ sender: Any) {
         canvas.switchtored()
     }
