@@ -80,6 +80,7 @@ class CanvasView: UIView {
                 path.removeAllPoints()
                 self.layer.sublayers = nil
                 self.setNeedsDisplay()
+                lay = false
             }
         } catch {
             print("OOF")
